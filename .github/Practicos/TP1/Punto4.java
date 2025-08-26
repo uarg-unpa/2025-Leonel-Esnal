@@ -18,7 +18,7 @@ public class Punto4 {
                     System.out.println("El numero mayor es:" + num2);
                 }
                 else{
-                    System.out.println("El numero mayor es:" + num3);
+                    System.out.println("El numero mayor es  :" + num3);
             }
         }
     }
