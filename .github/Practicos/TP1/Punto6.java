@@ -12,5 +12,6 @@ public class Punto6 {
         suma = num1 + num2 + num3;
         System.out.println("El total del producto de todos los numeros es:" + producto);
         System.out.println("La suma total de todos los numeros es: " + suma);
+        N.close();
     }
 }

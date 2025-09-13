@@ -38,5 +38,6 @@ public class Punto5 {
             default: System.out.println("No existe ese dia");
                 break;
         }
+        letra.close();
     }
 }

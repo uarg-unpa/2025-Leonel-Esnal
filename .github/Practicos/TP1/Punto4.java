@@ -20,6 +20,7 @@ public class Punto4 {
                 else{
                     System.out.println("El numero mayor es  :" + num3);
             }
+            input.close();
         }
     }
 }

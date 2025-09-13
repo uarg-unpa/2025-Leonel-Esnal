@@ -16,5 +16,6 @@ public class Iteracion {
         }
         System.out.println("La suma de los numeros es:" + suma);
         System.out.println("El total del producto es:" + producto);
+        I.close();
     }
 }
