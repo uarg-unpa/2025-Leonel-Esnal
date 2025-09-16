@@ -1,4 +1,5 @@
 public class Curso {
+
     private String nombre;
     private double duracion;
     private Profesor profesor;
