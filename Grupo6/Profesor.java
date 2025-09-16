@@ -1,21 +1,21 @@
 public class Profesor {
-    private String nombre;
+    private String nombreDeprofesor;
     private int exp;
     //CONSTRUCTOR
-    public Profesor (String nombre, int exp){
-        this.nombre = nombre;
+    public Profesor (String nombreDeprofesor, int exp){
+        this.nombreDeprofesor = nombreDeprofesor;
         this.exp = exp;
     }
     //METODOS SET
-    public void setNombre(String nombre){
-        this.nombre = nombre;
+    public void setNombreDeprofesor(String nombreDeprofesor){
+        this.nombreDeprofesor = nombreDeprofesor;
     }
     public void setExp (int exp){
         this.exp = exp;
     }
     //METODOS GET
-    public String getNombre(){
-        return this.nombre;
+    public String getNombreDeprofesor(){
+        return this.nombreDeprofesor;
     }
     public int getExp(){
         return this.exp;
@@ -32,6 +32,6 @@ public class Profesor {
     }
 
     public String toString(){
-        return nombre +  " " + exp;
+        return nombreDeprofesor +  " " + exp;
     }
 }
