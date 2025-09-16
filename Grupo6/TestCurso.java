@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class TestCurso {
     public static <Curso> void main(String[] args) {
         Scanner c = new Scanner(System.in);
@@ -16,10 +15,9 @@ public class TestCurso {
         System.out.println("Coloque la cantidad de experiencia que tiene el profesor");
         int exp = c.nextInt();
 
-        Curso curso3 = new Curso(nombre, duracion, new Profesor(nombreDeprofesor, exp));
+        Curso curso3 = new Curso(nombre, duracion, new)
 
-        System.out.println(curso3);
-        System.out.println(curso3);
+
 
         /*       
         Profesor profesor1 = new Profesor("Juan", 10 );
