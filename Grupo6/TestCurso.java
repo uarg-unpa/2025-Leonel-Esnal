@@ -1,4 +1,3 @@
-package Gropo6;
 import java.util.Scanner;
 public class TestCurso {
     public static <Curso> void main(String[] args) {
@@ -16,8 +15,11 @@ public class TestCurso {
         System.out.println("Coloque la cantidad de experiencia que tiene el profesor");
         int exp = c.nextInt();
 
-        Curso curso3 = new Curso(nombre, duracion, new)
+        Profesor profesor1 = new Profesor(nombreDeprofesor, exp);
 
+        Curso curso3 = new Curso(nombre, duracion, profesor1);
+
+        System.out.println(curso3);
 
 
         /*       
