@@ -1,3 +1,4 @@
+package Gropo6;
 public class Curso {
 
     private String nombre;

@@ -1,3 +1,4 @@
+package Gropo6;
 import java.util.Scanner;
 public class TestCurso {
     public static <Curso> void main(String[] args) {

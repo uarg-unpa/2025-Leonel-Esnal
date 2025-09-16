@@ -1,3 +1,4 @@
+package Grupo6;
 public class Profesor {
     private String nombreDeprofesor;
     private int exp;
