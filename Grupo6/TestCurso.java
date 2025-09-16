@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class TestCurso {
-    public static void main(String[] args) {
+    public static <Curso> void main(String[] args) {
         Scanner c = new Scanner(System.in);
 
         System.out.println("Coloque un nombre al curso");
@@ -17,9 +17,8 @@ public class TestCurso {
         int exp = c.nextInt();
 
         Curso curso3 = new Curso(nombre, duracion, new Profesor(nombreDeprofesor, exp));
+
         System.out.println(curso3);
-        curso3.actualizarExp();
-        curso3.CalcularHorasSemana();
         System.out.println(curso3);
 
         /*       
@@ -36,5 +35,6 @@ public class TestCurso {
         System.out.println(profesor1.esExperto());
         curso2.CaalcularHorasSemana(3);
         System.out.println(curso2); */
+        c.close();
     }
 }
