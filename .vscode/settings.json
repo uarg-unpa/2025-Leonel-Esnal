@@ -1,6 +1,6 @@
 {
     "java.project.sourcePaths": [
-        "uarg.pa.practica/_01_scanner",
-        ".github/Practicos/TP1"
-    ]
+        ".github\\Practicos\\TP1"
+    ],
+    "java.project.referencedLibraries": []
 }
