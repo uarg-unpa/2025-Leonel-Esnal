@@ -1,9 +1,10 @@
+
 import java.util.Scanner;
 
 public class MainCola {
      public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        PracticaCola cola = new PracticaCola();
+        Cola cola = new Cola();
         int opcion;
         do {
             System.out.println("\n=== MENÚ COLA DE TAREAS (Frente Fijo) ===");
@@ -34,10 +35,10 @@ public class MainCola {
                     }
                     break;
                 case 3:
-                    if (cola.frente()) {
+                    if (cola.estaVacia()) {
                         System.out.println("Error: La cola está vacía. No hay tarea en el frente.");
                     } else {
-                        int frente = cola.frente();
+                        int frente = cola.Peek();
                         System.out.println("Tarea en frente: " + frente);
                     }
                     break;

@@ -1,10 +1,10 @@
 
-public class PracticaCola {
+public class Cola {
 private final int maxcola=5;
  private int frente, ultimo;
  private int []elementos;
 
- public PracticaCola(){
+ public Cola(){
  frente=0;
  ultimo=0;
  elementos=new int[maxcola];
@@ -25,7 +25,7 @@ private final int maxcola=5;
  public int borrar(){
     int aux = elementos[frente];
     for(int i = 0; i < ultimo -1; i++){
-        elementos[i] = elementos(i + 1);
+        elementos[i] = elementos[i + 1];
     }
     ultimo--;
     return aux;
