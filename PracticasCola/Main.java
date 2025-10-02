@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Cola cola = new Cola();
+        Cola1 cola = new Cola1();
         int opcion;
         do {
             System.out.println("\n=== MENÚ COLA DE TAREAS (Frente Fijo) ===");
