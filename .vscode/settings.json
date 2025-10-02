@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
-        ".github\\Practicos\\TP1"
+        ".github/Practicos/TP1",
+        "PracticasCola"
     ],
     "java.project.referencedLibraries": []
 }
