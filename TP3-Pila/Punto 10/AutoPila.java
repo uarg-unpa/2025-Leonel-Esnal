@@ -1,8 +1,8 @@
-public class Auto {
+public class AutoPila {
     private AtributosAuto [] vehiculo;
     private int cima;
 
-    public Auto(int capacidad){
+    public AutoPila(int capacidad){
         vehiculo = new AtributosAuto [capacidad];
         cima = -1;
     }
