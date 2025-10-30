@@ -1,9 +1,9 @@
 public class Auto {
-    private NombreAuto [] vehiculo;
+    private AtributosAuto [] vehiculo;
     private int cima;
 
     public Auto(int capacidad){
-        vehiculo = new NombreAuto [capacidad];
+        vehiculo = new AtributosAuto [capacidad];
         cima = -1;
     }
 
@@ -21,13 +21,13 @@ public class Auto {
         return false;
     }
 
-    public void Meter(NombreAuto valor){
+    public void Meter(AtrinbutosAuto valor){
         cima++;
         vehiculo[cima] = valor;
     }
 
-    public NombreAuto Sacar(){
-        NombreAuto aux;
+    public AtributosAuto Sacar(){
+        AtrinbutosAuto aux;
         aux = vehiculo[cima];
         cima--;
         return aux;
@@ -41,16 +41,16 @@ public class Auto {
         }
     }
 
-    public NombreAuto eliminarAuto(String patente){
+    public AtrinbutosAuto eliminarAuto(String patente){
         if (estaVacia()) 
             return null;
         
 
         Auto aux1 = new Auto(vehiculo.length);
-        NombreAuto encontrado = null;
+        AtrinbutosAuto encontrado = null;
 
         while (!estaVacia()) {
-            NombreAuto auto1 = Sacar();
+            AtrinbutosAuto auto1 = Sacar();
             if (auto1.getPatente().equalsIgnoreCase(patente)) {
                 encontrado = auto1;
             }else{
