@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class TestAuto {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Auto pila = new Auto(13);
+        AutoPila pila = new Auto(13);
         int opcion;
 
         do{

@@ -15,7 +15,7 @@ public class Auto {
     }
 
     public String toString(){
-        return "Auto [Matricula" + matricula + "]";
+        return "Auto [Matricula " + matricula + "]";
     }
 
 

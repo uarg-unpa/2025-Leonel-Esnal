@@ -32,17 +32,23 @@ public class TestEstacionamiento {
                     System.out.println("Ingrese la patricula del auto que tiene que salir");
                     String auto2 = sc.nextLine();
                     if (estacionamiento.estaVacio()) {
-                        System.out.println("La cola enta vacia");
+                        System.out.println("Error la cola esta vacia");
                     }
-                    else{
-                        estacionamiento.SalidaDelAuto(auto2);
-                        System.out.println("El auto a salido del estacionamiento " + auto2);
-
-                    }
+                    estacionamiento.SalidaDelAuto(auto2);
+                    System.out.println("El auto con la matricula " + auto2 + " a salido del estacionamiento");
                     break;
 
                 case 3:
-                    estacionamiento.Mostar();
+                    ColaEstacionamiento aux1 = new ColaEstacionamiento();
+
+                    while (!estacionamiento.estaVacio()) {
+                        Auto a = estacionamiento.Borrar();
+                        System.out.println(a + "|");
+                        aux1.Insertar(a);
+                    }
+                    while (!aux1.estaVacio()) {
+                        estacionamiento.Insertar(aux1.Borrar());
+                    }
                     break;
 
                 case 0:

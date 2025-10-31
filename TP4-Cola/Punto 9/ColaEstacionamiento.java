@@ -36,32 +36,18 @@ public class ColaEstacionamiento {
     }
 
     public void SalidaDelAuto(String matricula){
-        if (estaVacio()) {
-            return;
-        }
+
         ColaEstacionamiento aux = new ColaEstacionamiento();
 
         while (!estaVacio()) {
             Auto actual = Borrar();
-
-            if (actual.getMatricula().equals(matricula)) {
-            }
-            else{
-               aux.Insertar(actual);
-            }
+            if (!actual.getMatricula().equals(matricula)) {
+              aux.Insertar(actual);
+           }
         }
+
         while (!aux.estaVacio()) {
             Insertar(aux.Borrar());
         }
-
     }
-
-    public void Mostar(){
-        if (estaVacio()) {
-        }
-        for(int i = frente; i < ultimo; i++){
-            System.out.println(" " + elemento[i].getMatricula());
-        }
-    }
-
 }
