@@ -40,11 +40,11 @@ public class Producto{
     //Metodos
 
     public boolean hayStock(int cantidad){
-        return getCantidadEnStock() > cantidad;
+        return this.cantidadEnStock > cantidad;
     }
 
-    public boolean Vender(int cantidad){
-        if (hayStock(cantidad)) {
+    public boolean vender(int cantidad){
+        if (this.cantidadEnStock > 0) {
             cantidadEnStock -= cantidad;
             return true;
         }
@@ -56,7 +56,7 @@ public class Producto{
     }
 
     public int tieneMasStock(Producto otro){
-        return this.cantidadEnStock - otro.cantidadEnStock;
+        return this.cantidadEnStock > otro.cantidadEnStock;
     }  
 
     public String toString(){

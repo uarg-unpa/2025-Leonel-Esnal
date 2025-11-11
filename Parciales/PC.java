@@ -54,15 +54,12 @@ public class PC {
         precio -= descuento;
     }
 
-    public void Mostrarinformacion(){
-        System.out.println(marca);
-        System.out.println(procesador);
-        System.out.println(precio);
-        System.out.println(ram);
+    public String toString(){
+        return "PC [Marca: " + marca + ", Procesador: " + procesador + ", Precio: " + precio + ", RAM: " + ram + "]";
     }
 
     public boolean MayorRam(PC p){
-        return this.ram > p.ram;
+        return this.getRam() > p.getRam();
     }
 
 }

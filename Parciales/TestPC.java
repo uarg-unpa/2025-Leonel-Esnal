@@ -42,11 +42,10 @@ public class TestPC {
 
         v2.setPrecio(v2.getPrecio() + 5000);
 
-        System.out.println("Mostrar la informacion de la primera pc");
+        System.out.println("Mostrar la informacion de la primera " + v1);
         v1.Mostrarinformacion();
 
-        System.out.println("Mostrar la informacion de la segunda pc");
-        v2.Mostrarinformacion();
+        System.out.println("Mostrar la informacion de la segunda " + v2);
 
         System.out.println("Comparacion de ram de las PCs " + v1.MayorRam(v2));
 
