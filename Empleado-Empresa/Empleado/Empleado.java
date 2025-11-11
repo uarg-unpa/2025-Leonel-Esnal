@@ -42,4 +42,8 @@ public class Empleado{
         }
         return false;
     }
+    
+    public String toString(){
+        return "Empleado [Nombre: " + nombre + ", Legajo: " + legajo + ", Sueldo: " + sueldo + "]";
+    }
 }
