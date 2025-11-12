@@ -13,6 +13,15 @@ public class Empresa {
         System.out.println("¿Tiene un mayor sueldo? " + empleado3.ganaMasQue(empleado2));
         System.out.println("¿Tiene un mayor sueldo? " + empleado2.ganaMasQue(empleado1));
         
+        if (empleado1.ganaMasQue(empleado3)) {
+            System.out.println(empleado1.getNombre() + " gana mas que " + empleado3.getNombre());
+        }
+        else if (empleado3.ganaMasQue(empleado1)) {
+            System.out.println(empleado3.getNombre() + " gana mas que " + empleado1.getNombre());
+        }
+        else{
+            System.out.println("Ganan lo mismo");
+        }
     }
 }
 
