@@ -35,21 +35,10 @@ public class Cola{
         Cola NuevaCola = new Cola();
         Cola aux = new Cola();
 
-        int clave = palabraClave.length();
-
         while (!estaVacia()) {
             String palabra = borrar();
-            boolean coincide = false;
 
-            for(int i = 0; i < palabra.length() - clave; i++ ){
-                String clave2 = palabra.substring(i, i + clave);
-
-                if (clave2.equals(palabraClave)) {
-                    coincide = true;
-                }
-            }
-
-            if (coincide) {
+            if (palabra.contains(palabraClave)) {
                 NuevaCola.insertar(palabra);
             }
             aux.insertar(palabra);
