@@ -73,31 +73,23 @@ public class ColaInt {
     }
 
     public ColaInt Invertida(){
-        ColaInt aux = new ColaInt();
-        ColaInt invertida = new ColaInt();
+        PilaEnteros pila = new PilaEnteros();   
 
         while (!estaVacio()) {
-            aux.insertar(borrar());
+            pila.meter(borrar());
         }
+
+        ColaInt invertida = new ColaInt();
+        ColaInt aux = new ColaInt();
+
+        while (!pila.estaVacia()) {
+            int valor = pila.sacar();
+            invertida.insertar(valor);
+            aux.insertar(valor);
+        }
+
         while (!aux.estaVacio()) {
-            ColaInt aux2 = new ColaInt();
-            int ultimo = 0;
-
-            while (!aux.estaVacio()) {
-                int valor = aux.borrar();
-
-                if (aux.estaVacio()) {
-                    ultimo = valor;
-                }
-                else{
-                    aux2.insertar(valor);
-                }
-            }
-            while (!aux2.estaVacio()) {
-                aux.insertar(aux2.borrar());
-            }
-            invertida.insertar(ultimo);
-            insertar(ultimo);
+            insertar(aux.borrar());
         }
         return invertida;
     }
