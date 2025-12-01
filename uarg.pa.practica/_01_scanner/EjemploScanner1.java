@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class EjemploScanner_01 {
+public class EjemploScanner1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -26,3 +26,4 @@ public class EjemploScanner_01 {
         scanner.close();
     }
 }
+//Prueba de local

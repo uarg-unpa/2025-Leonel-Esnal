@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+public class MenuLetra {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        LetraCola cola = new LetraCola();
+        int opcion;
+
+        do{
+            System.out.println("=== Menu ===");
+            System.out.println("1. Encolar caracter");
+            System.out.println("2. borrar caracter");
+            System.out.println("3. Ver el caracter del frente");
+            System.out.println("0. Salir del sistema");
+            opcion = sc.nextInt();
+            sc.nextLine();
+
+            switch (opcion) {
+                case 1:
+                    System.out.println("Ingrese un caracter");
+                    char letra1 = sc.next().charAt(0);
+                    if (cola.estaLleno()) {
+                        System.out.println("Error la cola esta llena");
+                    }
+                    else{
+                        cola.insertar(letra1);
+                        System.out.println("Se ingreso un caracter " + letra1);
+                    }
+                    break;
+
+                case 2:
+                    if (cola.estaVacio()) {
+                        System.out.println("Error la cola esta vacia");
+                    }
+                    else{
+                        int desencolada = cola.borrar();
+                        System.out.println("Se ha desencolado " + desencolada);
+                    }
+                    break;
+
+                case 3:
+                    if (cola.estaVacio()) {
+                        System.out.println("Error no hay un caracter en el frente de la cola");
+                    }
+                    else{
+                        int frente = cola.Peek();
+                        System.out.println("Caracter del frente " + frente);
+                    }
+                    break;
+
+                case 0:
+                    System.out.println("Saliendo del menu......");
+                    break;
+
+                default:
+                    System.out.println("Error coloque una opcion valido");
+                    break;
+            }
+        }while(opcion != 0);
+        sc.close();
+
+    }
+}
