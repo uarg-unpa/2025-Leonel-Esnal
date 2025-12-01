@@ -1,0 +1,35 @@
+1. ¿Qué es FIFO y qué significa que una cola sea circular?
+
+2.¿Para qué sirve el método peek()? ¿Rompe el principio FIFO?
+
+3.¿Qué es underflow y overflow en una cola implementada con array?
+
+4.¿Por qué en una cola circular con MAX=10 solo podemos usar 9 posiciones?
+
+5.¿En qué se diferencia la implementación con contador de la que no tiene contador?
+
+6.¿Para qué se usan las colas en la vida real? Da dos ejemplos claros?.
+
+7.¿Qué ventaja tiene usar cola circular en lugar de desplazar todos los elementos?
+
+Desarrollo: 
+
+1. FIFO es un principio de cola. El primero elemento en trar es el primero en salir.
+
+Cola circular es donde los indices dan la vuelta al llegar al final. A diferencia de una cola normal donde es frete fijo y final movible. La cola circular es de frente y final movible.
+
+2. El metodo peek nos premite nos permite ver el elemnto que esta al frente de una cola sin eliminarlo. Y no rompe el principio de FIFO porque no modifica la estructura de la cola.
+
+3. underflow ocurre cuando quieres sacar o borrar un elemento de la cola pero esta se encuentra vacia.
+
+overflow ocurre cuando quieres meter o insertar un elemento en la cola pero esta se encuentra llena.
+
+4. Porque dejando a MAX - 1, nos permite distinguir si la cola circular esta vacía o esta llena. 
+
+5. Una cola sin contador se usa cuando hay que hacer una implementación simple, pero no permite saber cuantos elementos hay. En cambio una cola con contador nos permite saber cuantos elementos hay en el arreglo y aprovechar mejor las pocisiones del mismo.
+
+6. En un supermercado las personas para ser atendidas tiene que hacer una cola la primera persona "la que esta en frente de la cola" es la primera en ser atendida.
+
+en un colectivo la persona que esta en frente es la primera en entrar al colectivo y la ultima persona que esta en la cola va a ser la ultima en entrar.
+
+7. La cola circular su pricipal ventaja es la optimizancion del uso del espacio en memoria. El espacio se reutiliza automáticamente volviendo al inicio del array volviendolo mas eficiente que la cola normal.
